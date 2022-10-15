@@ -1,7 +1,7 @@
-// утилита для генерации идентификатора пользователя
+
 export const getId = () => Math.random().toString(36).slice(2);
 
-// утилита для работы с `localStorage`
+
 export const storage = {
   set<T>(key: string, value: T) {
     localStorage.setItem(key, JSON.stringify(value));
